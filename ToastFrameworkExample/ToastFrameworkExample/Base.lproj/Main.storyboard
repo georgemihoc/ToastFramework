@@ -33,7 +33,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXw-5y-RPD">
                                         <rect key="frame" x="0.0" y="70" width="374" height="50"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="CTA Toast"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Gray Toast"/>
                                         <connections>
                                             <action selector="basicToastGraySelected:" destination="fxr-4I-aOr" eventType="touchUpInside" id="py2-F7-Yyg"/>
                                         </connections>
@@ -41,7 +41,10 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4r-uP-Q9H">
                                         <rect key="frame" x="0.0" y="140" width="374" height="50"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="CTA Toast"/>
+                                        <connections>
+                                            <action selector="ctaToastSelected:" destination="fxr-4I-aOr" eventType="touchUpInside" id="poI-KX-vgO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wm-FM-7n7">
                                         <rect key="frame" x="0.0" y="210" width="374" height="50"/>
