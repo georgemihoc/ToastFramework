@@ -80,7 +80,7 @@ public extension UIView {
     ///   - duration: Durration
     ///   - completion: Completion handler
     func showToast(message: String,
-                   color: UIColor? = nil,
+                   color: UIColor = .black,
                    duration: TimeInterval = ToastManager.shared.duration,
                    completion: ((_ didTap: Bool) -> Void)? = nil) {
         
