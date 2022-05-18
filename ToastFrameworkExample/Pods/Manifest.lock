@@ -1,0 +1,16 @@
+PODS:
+  - ToastFrameworkSwift (1.0.1)
+
+DEPENDENCIES:
+  - ToastFrameworkSwift (from `../`)
+
+EXTERNAL SOURCES:
+  ToastFrameworkSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ToastFrameworkSwift: ecae91e762cf83241229b43818bc47861d4e19e9
+
+PODFILE CHECKSUM: 122705f7deefd0a345ffd767644e27ac540d3b20
+
+COCOAPODS: 1.11.2

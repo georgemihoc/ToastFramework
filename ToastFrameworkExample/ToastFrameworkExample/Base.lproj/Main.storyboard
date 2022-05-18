@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fxr-4I-aOr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="6hM-u0-bx6">
+            <objects>
+                <viewController id="fxr-4I-aOr" customClass="ViewController" customModule="ToastFrameworkExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6nC-aN-ckm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Fed-tk-a9O">
+                                <rect key="frame" x="20" y="318" width="374" height="260"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4c-eh-xwp">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="qs7-QE-2HQ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Basic toast"/>
+                                        <connections>
+                                            <action selector="basicToastSelected:" destination="fxr-4I-aOr" eventType="touchUpInside" id="I4u-MC-APG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXw-5y-RPD">
+                                        <rect key="frame" x="0.0" y="70" width="374" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="CTA Toast"/>
+                                        <connections>
+                                            <action selector="basicToastGraySelected:" destination="fxr-4I-aOr" eventType="touchUpInside" id="py2-F7-Yyg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4r-uP-Q9H">
+                                        <rect key="frame" x="0.0" y="140" width="374" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wm-FM-7n7">
+                                        <rect key="frame" x="0.0" y="210" width="374" height="50"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="S4r-uP-Q9H" firstAttribute="height" secondItem="K4c-eh-xwp" secondAttribute="height" id="ZW6-js-hcP"/>
+                                    <constraint firstItem="cXw-5y-RPD" firstAttribute="height" secondItem="K4c-eh-xwp" secondAttribute="height" id="eTi-bM-wAl"/>
+                                    <constraint firstItem="6wm-FM-7n7" firstAttribute="height" secondItem="K4c-eh-xwp" secondAttribute="height" id="oZy-4G-B7V"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XRX-lv-C16"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fed-tk-a9O" firstAttribute="centerY" secondItem="6nC-aN-ckm" secondAttribute="centerY" id="7uR-rW-BmZ"/>
+                            <constraint firstItem="XRX-lv-C16" firstAttribute="trailing" secondItem="Fed-tk-a9O" secondAttribute="trailing" constant="20" id="Ka2-Em-2aS"/>
+                            <constraint firstItem="Fed-tk-a9O" firstAttribute="leading" secondItem="XRX-lv-C16" secondAttribute="leading" constant="20" id="P9x-9X-603"/>
+                            <constraint firstItem="Fed-tk-a9O" firstAttribute="centerX" secondItem="6nC-aN-ckm" secondAttribute="centerX" id="qJh-dI-ozc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EZZ-de-g92" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

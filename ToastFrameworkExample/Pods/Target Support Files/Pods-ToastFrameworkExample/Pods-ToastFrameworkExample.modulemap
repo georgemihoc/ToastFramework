@@ -1,0 +1,6 @@
+framework module Pods_ToastFrameworkExample {
+  umbrella header "Pods-ToastFrameworkExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
