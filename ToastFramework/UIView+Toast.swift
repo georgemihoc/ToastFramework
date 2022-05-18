@@ -60,12 +60,13 @@ public extension UIView {
     ///   - duration: Display duration
     ///   - completion: Completion handler
     func showCTAToast(message: String,
+                      color: UIColor = .black,
                       actionTitle: String,
                       action: (() -> Void)?,
                       duration: TimeInterval = ToastManager.shared.duration) {
         
         let ctaToast = CTAToastView.loadFromNib()
-        ctaToast.setUpWith(message: message, actionTitle: actionTitle) { [unowned self] in
+        ctaToast.setUpWith(message: message, color: color, actionTitle: actionTitle) { [unowned self] in
             
             hideToast()
             action?()
@@ -152,7 +153,7 @@ public extension UIView {
     private func showToast(_ toast: UIView, duration: TimeInterval) {
         
         let sideMargins: CGFloat = 10
-        let bottomMargin: CGFloat = 30
+        let bottomMargin: CGFloat = 10
         
         toast.alpha = 0.0
         addSubview(toast)

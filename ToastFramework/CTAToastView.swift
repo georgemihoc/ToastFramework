@@ -18,9 +18,10 @@ final class CTAToastView: UIView, NibLoadable {
         action?()
     }
     
-    func setUpWith(message: String, actionTitle: String, didTapOnAction: @escaping () -> Void) {
+    func setUpWith(message: String, color: UIColor, actionTitle: String, didTapOnAction: @escaping () -> Void) {
         self.action = didTapOnAction
         textLabel.text = message
         actionButton.setTitle(actionTitle, for: .normal)
+        backgroundColor = color
     }
 }
