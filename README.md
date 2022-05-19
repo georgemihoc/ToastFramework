@@ -53,28 +53,31 @@ import ToastFrameworkSwift
 The toast framework can be configured with the following properties:
 
 ```swift
-/// Enables or disables tap to dismiss behaviour for toasts. When `true`, toast views will dismiss when tapped. When `false`, tapping will have no effect.
+// Enables or disables tap to dismiss behaviour for toasts. 
+// When `true`, toast views will dismiss when tapped. When `false`, tapping will have no effect.
 ToastManager.shared.isTapToDismissEnabled = true
 ```
 
 ```swift
-/// Enables or disables wipe to dismiss behaviour for toasts. When `true`,
-toast views will dismiss when swiped. When `false`, swiping will have no effect.
+// Enables or disables wipe to dismiss behaviour for toasts. 
+// When `true`, toast views will dismiss when swiped. When `false`, swiping will have no effect.
 ToastManager.shared.isSwipeToDismissEnabled = true
 ```
 
 ```swift
-/// Enables or disables queueing behaviour for toasts. When `true`, toast views will appear one after the other. When `false`, toast overlapping might happen
+// Enables or disables queueing behaviour for toasts. 
+// When `true`, toast views will appear one after the other. When `false`, toast overlapping might happen
 ToastManager.shared.isQueueEnabled = true
 ```
 
 ```swift
-/// The default duration for toasts. Default value is 1.0
+// The default duration for toasts. Default value is 1.0
 ToastManager.shared.duration = 2
 ```
 
 ```swift
-/// This property sets up the haptic feedback type. The types can be found within `HapticFeedback` class. When `.none`, there won't be any haptic feedback.
+// This property sets up the haptic feedback type. The types can be found 
+// within `HapticFeedback` class. When `.none`, there won't be any haptic feedback.
 ToastManager.shared.hapticFeedbackType = .impactLight
 ```
 
