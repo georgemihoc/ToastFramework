@@ -19,10 +19,18 @@ final class CTAToastView: UIView, NibLoadable {
     }
     
     func setUpWith(message: String, toastColor: UIColor, textColor: UIColor, actionTitle: String, didTapOnAction: @escaping () -> Void) {
+        // Setup background color
+        backgroundColor = toastColor
+        
+        // Setup CTA action
         self.action = didTapOnAction
+        
+        // Setup text label
         textLabel.text = message
         textLabel.textColor = textColor
-        backgroundColor = toastColor
+        
+        // Setup action button
         actionButton.setTitle(actionTitle, for: .normal)
+        actionButton.setTitleColor(textColor, for: .normal)
     }
 }
