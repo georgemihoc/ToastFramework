@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ToastFrameworkSwift"
-  s.version          = "1.0.7"
+  s.version          = "1.0.8"
   s.summary          = "ToastFrameworkSwift Library"
   s.description      = <<-DESC
   A simple and useful toast framework written in Swift.
