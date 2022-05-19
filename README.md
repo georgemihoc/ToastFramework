@@ -6,6 +6,9 @@
 
 A simple and configurable toast framework written in Swift.
 
+![Demo](https://user-images.githubusercontent.com/45356920/169332591-e1eb102e-ee42-40e3-94d4-84cc0a573ca2.gif)
+
+
 ## Installation
 
 ToastFrameworkSwift is an open-source framework available through [CocoaPods](https://cocoapods.org).
