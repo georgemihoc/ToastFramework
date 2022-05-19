@@ -1,8 +1,8 @@
 # ToastFrameworkSwift
 
 [![Version](https://img.shields.io/cocoapods/v/ToastFrameworkSwift)](https://cocoapods.org/pods/ToastFrameworkSwift)
-[![License](https://img.shields.io/cocoapods/l/ToastFrameworkSwift)](https://cocoapods.org/pods/ToastFrameworkSwift)
 [![Platform](https://img.shields.io/cocoapods/p/ToastFrameworkSwift)](https://cocoapods.org/pods/ToastFrameworkSwift)
+[![License](https://img.shields.io/cocoapods/l/ToastFrameworkSwift)](https://cocoapods.org/pods/ToastFrameworkSwift)
 
 A simple and configurable toast framework written in Swift.
 
