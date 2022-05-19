@@ -23,7 +23,11 @@ class ViewController: UIViewController {
     @IBAction func basicToastGraySelected(_ sender: UIButton) {
         presentBasicGrayToast()
     }
-
+    
+    @IBAction func basicBlackTextToastSelected(_ sender: UIButton) {
+        presentBasicBlackTextToast()
+    }
+    
     @IBAction func ctaToastSelected(_ sender: UIButton) {
         presentCTAToast()
     }
@@ -46,12 +50,16 @@ private extension ViewController {
     }
 
     func presentBasicGrayToast() {
-        view.showToast(message: "This is a Basic Gray Toast.", color: .gray)
+        view.showToast(message: "This is a Basic Gray Toast.", toastColor: .gray)
+    }
+    
+    func presentBasicBlackTextToast() {
+        view.showToast(message: "This is a Basic Gray Toast.", toastColor: .gray, textColor: .black)
     }
 
     func presentCTAToast() {
         view.showCTAToast(message: "This is a CTA Toast.", actionTitle: "Press here") { [weak self] in
-            self?.view.showToast(message: "This is the follow-up Toast.", color: .systemGreen)
+            self?.view.showToast(message: "This is the follow-up Toast.", toastColor: .systemGreen)
         }
     }
 }
