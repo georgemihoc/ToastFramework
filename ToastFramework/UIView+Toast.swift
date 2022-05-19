@@ -337,27 +337,23 @@ public class ToastManager {
     
     public static let shared = ToastManager()
     
-    /** Enables or disables tap to dismiss behaviour for toast views. When `true`,
+    /** Enables or disables tap to dismiss behaviour for toasts. When `true`,
      toast views will dismiss when tapped. When `false`, tapping will have no effect.
      */
     public var isTapToDismissEnabled = true
     
-    /** Enables or disables wipe to dismiss behaviour for toast views. When `true`,
+    /** Enables or disables wipe to dismiss behaviour for toasts. When `true`,
      toast views will dismiss when swiped. When `false`, swiping will have no effect.
      */
     public var isSwipeToDismissEnabled = true
     
-    /** Enables or disables queueing behaviour for toast views. When `true`,
-     toast views will appear one after the other. When `false`, multiple toast
-     views will appear at the same time (potentially overlapping depending
-     on their positions).
+    /** Enables or disables queueing behaviour for toasts. When `true`,
+     toast views will appear one after the other. When `false`, toast overlapping might happen
      */
     public var isQueueEnabled = true
     
     /**
-     The default duration. Used for the `makeToast` and
-     `showToast` methods that don't require an explicit duration.
-     Default is 4.0.
+     The default duration for toasts. Default value is 1.0
      */
     public var duration: TimeInterval = 1.0
     
