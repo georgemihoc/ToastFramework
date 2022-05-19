@@ -54,7 +54,7 @@ private extension ViewController {
     }
     
     func presentBasicBlackTextToast() {
-        view.showToast(message: "This is a Basic Gray Toast.", toastColor: .gray, textColor: .black)
+        view.showToast(message: "This is a Black Text Toast.", toastColor: .gray, textColor: .black)
     }
 
     func presentCTAToast() {
