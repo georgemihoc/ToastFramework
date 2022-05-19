@@ -81,6 +81,35 @@ ToastManager.shared.duration = 2
 ToastManager.shared.hapticFeedbackType = .impactLight
 ```
 
+### Basic Toast
+```swift
+func presentBasicToast() {
+    view.showToast(message: "This is a Basic Toast.")
+}
+```
+
+### Basic Toast with customizable background
+```swift
+func presentBasicGrayToast() {
+    view.showToast(message: "This is a Basic Gray Toast.", toastColor: .gray)
+}
+```
+
+### Basic Toast with customizable background and text color
+```swift
+func presentBasicBlackTextToast() {
+    view.showToast(message: "This is a Black Text Toast.", toastColor: .gray, textColor: .black)
+}
+```
+### Basic Toast with customizable background and text color
+```swift
+func presentCTAToast() {
+    view.showCTAToast(message: "This is a CTA Toast.", actionTitle: "Press here") { [weak self] in
+        self?.view.showToast(message: "This is the follow-up Toast.", toastColor: .systemGreen)
+    }
+}
+```
+
 ## Author
 
 George Mihoc, george.mihoc@gmail.com
