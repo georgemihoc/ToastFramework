@@ -21,7 +21,8 @@ final class CTAToastView: UIView, NibLoadable {
     func setUpWith(message: String, toastColor: UIColor, textColor: UIColor, actionTitle: String, didTapOnAction: @escaping () -> Void) {
         self.action = didTapOnAction
         textLabel.text = message
-        actionButton.setTitle(actionTitle, for: .normal)
+        textLabel.textColor = textColor
         backgroundColor = toastColor
+        actionButton.setTitle(actionTitle, for: .normal)
     }
 }

@@ -60,8 +60,8 @@ public extension UIView {
     ///   - duration: Display duration
     ///   - completion: Completion handler
     func showCTAToast(message: String,
-                      toastColor: UIColor = .black,
-                      textColor: UIColor = .white,
+                      toastColor: UIColor = .label,
+                      textColor: UIColor = .systemBackground,
                       actionTitle: String,
                       action: (() -> Void)?,
                       duration: TimeInterval = ToastManager.shared.duration) {
@@ -82,8 +82,8 @@ public extension UIView {
     ///   - duration: Durration
     ///   - completion: Completion handler
     func showToast(message: String,
-                   toastColor: UIColor = .black,
-                   textColor: UIColor = .white,
+                   toastColor: UIColor = .label,
+                   textColor: UIColor = .systemBackground,
                    duration: TimeInterval = ToastManager.shared.duration,
                    completion: ((_ didTap: Bool) -> Void)? = nil) {
         
