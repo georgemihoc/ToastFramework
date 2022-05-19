@@ -10,7 +10,13 @@ A simple and configurable toast framework written in Swift.
 
 ToastFrameworkSwift is an open-source framework available through [CocoaPods](https://cocoapods.org).
 
-First, initialize your project with Cocoapods (install Cocoapods prior to this if you do not have it installed on your machine):
+First step is to install [CocoaPods](https://cocoapods.org). Skip this step if you already have [CocoaPods](https://cocoapods.org) installed on your machine.
+
+```ruby
+sudo gem install cocoapods
+```
+
+Initialize your project with Cocoapods from your project directory:
 
 ```ruby
 pod init
