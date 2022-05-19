@@ -41,7 +41,7 @@ private extension ViewController {
         ToastManager.shared.isSwipeToDismissEnabled = true
         ToastManager.shared.isQueueEnabled = true
         ToastManager.shared.duration = 2
-        ToastManager.shared.areHapticsEnabled = true
+        ToastManager.shared.hapticFeedbackType = .impactLight
     }
 
     func presentBasicToast() {
