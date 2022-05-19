@@ -101,7 +101,7 @@ func presentBasicBlackTextToast() {
     view.showToast(message: "This is a Black Text Toast.", toastColor: .gray, textColor: .black)
 }
 ```
-### Basic Toast with customizable background and text color
+### CTA Toast that presents a follow-up Toast on action
 ```swift
 func presentCTAToast() {
     view.showCTAToast(message: "This is a CTA Toast.", actionTitle: "Press here") { [weak self] in
