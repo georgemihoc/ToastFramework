@@ -7,14 +7,12 @@
 
 import UIKit
 
+public enum FeedbackType {
+    case success, warning, error, selection, impactLight, impactMedium, impactHeavy, none
+}
+
 final class HapticFeedback {
-    
-    public enum FeedbackType {
-        case success, warning, error, selection, impactLight, impactMedium, impactHeavy
-    }
-    
     static func generateFeedback(_ feedback: FeedbackType) {
-        
         switch feedback {
         case .success       : UINotificationFeedbackGenerator().notificationOccurred(.success)
         case .warning       : UINotificationFeedbackGenerator().notificationOccurred(.warning)
@@ -23,6 +21,7 @@ final class HapticFeedback {
         case .impactLight   : UIImpactFeedbackGenerator(style: .light).impactOccurred()
         case .impactMedium  : UIImpactFeedbackGenerator(style: .medium).impactOccurred()
         case .impactHeavy   : UIImpactFeedbackGenerator(style: .heavy).impactOccurred()
+        case .none: break
         }
     }
 }

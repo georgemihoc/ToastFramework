@@ -209,7 +209,7 @@ public extension UIView {
             
         }) { _ in
             
-            HapticFeedback.generateFeedback(.impactLight)
+            HapticFeedback.generateFeedback(ToastManager.shared.hapticFeedbackType)
             let timer = Timer(timeInterval: duration, target: self, selector: #selector(UIView.toastTimerDidFinish(_:)), userInfo: toast, repeats: false)
             RunLoop.main.add(timer, forMode: .common)
             objc_setAssociatedObject(toast, &ToastKeys.timer, timer, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
@@ -361,8 +361,8 @@ public class ToastManager {
      */
     public var duration: TimeInterval = 1.0
     
-    /** Enables or disables haptic behaviour for toast views. When `true`,
-     toast views will have a haptic feebback. When `false`, there won't be any haptic feedback
+    /** This property sets up the haptic feedback type. The types can be found within
+     `HapticFeedback` class. When `.none`, there won't be any haptic feedback.
      */
-    public var areHapticsEnabled = true
+    public var hapticFeedbackType: FeedbackType = .impactLight
 }
