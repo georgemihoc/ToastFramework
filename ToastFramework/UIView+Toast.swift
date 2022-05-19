@@ -60,13 +60,14 @@ public extension UIView {
     ///   - duration: Display duration
     ///   - completion: Completion handler
     func showCTAToast(message: String,
-                      color: UIColor = .black,
+                      toastColor: UIColor = .black,
+                      textColor: UIColor = .white,
                       actionTitle: String,
                       action: (() -> Void)?,
                       duration: TimeInterval = ToastManager.shared.duration) {
         
         let ctaToast = CTAToastView.loadFromNib()
-        ctaToast.setUpWith(message: message, color: color, actionTitle: actionTitle) { [unowned self] in
+        ctaToast.setUpWith(message: message, toastColor: toastColor, textColor: textColor, actionTitle: actionTitle) { [unowned self] in
             
             hideToast()
             action?()
@@ -81,12 +82,13 @@ public extension UIView {
     ///   - duration: Durration
     ///   - completion: Completion handler
     func showToast(message: String,
-                   color: UIColor = .black,
+                   toastColor: UIColor = .black,
+                   textColor: UIColor = .white,
                    duration: TimeInterval = ToastManager.shared.duration,
                    completion: ((_ didTap: Bool) -> Void)? = nil) {
         
         let toastMessage = ToastView.loadFromNib()
-        toastMessage.setUpWith(message: message, color: color)
+        toastMessage.setUpWith(message: message, toastColor: toastColor, textColor: textColor)
         showToast(toastMessage, duration: duration, completion: completion)
     }
     

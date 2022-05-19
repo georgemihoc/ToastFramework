@@ -11,8 +11,9 @@ class ToastView: UIView, NibLoadable {
 
     @IBOutlet weak var toastLabel: UILabel!
     
-    internal func setUpWith(message: String, color: UIColor) {
+    internal func setUpWith(message: String, toastColor: UIColor, textColor: UIColor) {
         toastLabel.text = message
-        backgroundColor = color
+        toastLabel.textColor = textColor
+        backgroundColor = toastColor
     }
 }
