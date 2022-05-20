@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/cocoapods/v/ToastFrameworkSwift)](https://cocoapods.org/pods/ToastFrameworkSwift)
 [![Platform](https://img.shields.io/cocoapods/p/ToastFrameworkSwift)](https://cocoapods.org/pods/ToastFrameworkSwift)
-[![License](https://img.shields.io/cocoapods/l/ToastFrameworkSwift)](https://cocoapods.org/pods/ToastFrameworkSwift)
+[![License](https://img.shields.io/cocoapods/l/ToastFrameworkSwift)](https://github.com/georgemihoc/ToastFrameworkSwift/blob/main/LICENSE)
 
 A configurable Swift framework for UI Toast components.
 
